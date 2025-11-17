@@ -1,0 +1,27 @@
+{
+  "name": "jinzai-ikusei",
+  "version": "1.0.0",
+  "description": "人事評価・研修統合プラットフォーム",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "clean": "pnpm -r clean",
+    "db:generate": "pnpm --filter @jinzai/backend db:generate",
+    "db:migrate": "pnpm --filter @jinzai/backend db:migrate",
+    "db:seed": "pnpm --filter @jinzai/backend db:seed"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.0"
+  }
+}
